@@ -24,7 +24,7 @@ const ViewEmp = () => {
       <th scope="col">Emp ID</th>
       <th scope="col">Emp Name</th>
       <th scope="col">Designation</th>
-      <th scope="col">Salary</th>
+      <th scope="col">salary</th>
     </tr>
   </thead>
   <tbody>
