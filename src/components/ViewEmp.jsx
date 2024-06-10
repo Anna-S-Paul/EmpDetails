@@ -4,11 +4,11 @@ import NavEmp from './NavEmp'
 const ViewEmp = () => {
   const [data,changeData]=useState(
     [
-      {"Name":"Ann","Designation":"Manager"},
-      {"Name":"Anna","Designation":"HR"},
-      {"Name":"Alfiya","Designation":"Manager"},
-      {"Name":"Aseera","Designation":"Intern"},
-      {"Name":"Aysha","Designation":"Intern"}
+      {"id":101, "Name":"Ann","Designation":"Manager", "salary":1500},
+      {"id":102, "Name":"Anna","Designation":"HR", "salary":45670},
+      {"id":908, "Name":"Alfiya","Designation":"Manager", "salary":23000},
+      {"id":232, "Name":"Aseera","Designation":"Intern", "salary":10000},
+      {"id":243, "Name":"Aysha","Designation":"Intern", "salary":10000}
     ]
   )
   return (
@@ -21,8 +21,10 @@ const ViewEmp = () => {
                 <table class="table">
   <thead>
     <tr>
+      <th scope="col">Emp ID</th>
       <th scope="col">Emp Name</th>
       <th scope="col">Designation</th>
+      <th scope="col">Salary</th>
     </tr>
   </thead>
   <tbody>
@@ -30,8 +32,10 @@ const ViewEmp = () => {
     data.map(
       (value,index)=>{
         return  <tr>
+        <td>{value.id}</td>
         <td>{value.Name}</td>
         <td>{value.Designation}</td>
+        <td>{value.salary}</td>
       </tr>
       }
     )
